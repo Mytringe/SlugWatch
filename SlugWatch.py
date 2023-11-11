@@ -15,13 +15,13 @@ db = firestore.client()
 
 class GymCheckIn:
     timeOfCheckIn = 0 #time of check in
-    
+
     def __init__(self):
             self.timeOfCheckIn = datetime.datetime.now().isoformat()
 
 GymCheckIns = []
 
-#Code neo found online
+#Code found online
 def categorize_timestamps_by_hour(timestamps):
 
     hour_counts = {}
